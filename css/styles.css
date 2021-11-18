@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000016;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bola {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    animation-name: bola;
+    animation-duration: .65s;
+    animation-timing-function: cubic-bezier(0, 0, 0.25, 1.0);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bola {
+
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 70%;
+    }
+
+}
