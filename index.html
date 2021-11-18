@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8b1c082df7.js" crossorigin="anonymous"></script>
     <title>Pelota rebotando</title>
 </head>
 <body>
     <div class="container">
-        <div class="bola"></div>
+        <div id="bola" class="bola"></div>
     </div>
+    <i id="on" class="fas fa-volume-up"></i>
+    <i id="off" class="fas fa-volume-mute"></i>
+    <audio id="audio" src="src/audio/audio.mp3" loop muted></audio>
+    <script src="js/main.js"></script>
 </body>
 </html>
